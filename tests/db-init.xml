@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="test_booking">
+    <!--table_data name="bookings">
+        <row>
+            <field name="id">1</field>
+            <field name="pool_id">1</field>
+            <field name="user_id">1</field>
+            <field name="status">booked</field>
+            <field name="booking_type">1</field>
+            <field name="insertion_datetime_utc">2018-08-01 10:00:00</field>
+            <field name="lastupdate_datetime_utc">2018-08-01 10:00:00</field>
+            <field name="status_datetime_utc">2018-08-01 10:00:00</field>
+            <field name="booking_set_id">20180801100000_1</field>
+        </row>
+        <row>
+            <field name="id">2</field>
+            <field name="pool_id">1</field>
+            <field name="user_id">2</field>
+            <field name="status">booked</field>
+            <field name="booking_type">1</field>
+            <field name="insertion_datetime_utc">2018-08-01 10:00:00</field>
+            <field name="lastupdate_datetime_utc">2018-08-01 10:00:00</field>
+            <field name="status_datetime_utc">2018-08-01 10:00:00</field>
+            <field name="booking_set_id">20180801100000_2</field>
+        </row>
+        <row>
+            <field name="id">3</field>
+            <field name="pool_id">2</field>
+            <field name="user_id">1</field>
+            <field name="status">booked</field>
+            <field name="booking_type">1</field>
+            <field name="insertion_datetime_utc">2018-08-01 10:00:00</field>
+            <field name="lastupdate_datetime_utc">2018-08-01 10:00:00</field>
+            <field name="status_datetime_utc">2018-08-01 10:00:00</field>
+            <field name="booking_set_id">20180801100000_3</field>
+        </row>
+    </table_data-->
+    <table_data name="pools">
+        <row>
+            <field name="id">1</field>
+            <field name="label">Monday 10h-12h</field>
+            <field name="course_id">1</field>
+        </row>
+        <row>
+            <field name="id">2</field>
+            <field name="label">Wednesday 10h-12h</field> <!-- Forced to full in test with DummyQuotaService -->
+            <field name="course_id">1</field>
+        </row>
+        <row>
+            <field name="id">3</field>
+            <field name="label">Tuesday 10h-12h</field>
+            <field name="course_id">2</field>
+        </row>
+    </table_data>
+    <table_data name="courses">
+        <row>
+            <field name="id">1</field>
+            <field name="label">PHP courses</field>
+        </row>
+        <row>
+            <field name="id">2</field>
+            <field name="label">React courses</field>
+        </row>
+    </table_data>
+    <table_data name="pool_levels">
+        <row>
+            <field name="pool_id">1</field>
+            <field name="level_id">beginner</field>
+        </row>
+        <row>
+            <field name="pool_id">1</field>
+            <field name="level_id">medium</field>
+        </row>
+        <row>
+            <field name="pool_id">2</field>
+            <field name="level_id">beginner</field>
+        </row>
+    </table_data>
+    <table_data name="lakes">
+        <row>
+            <field name="id">1</field>
+            <field name="label">Lake Titicaca</field>
+        </row>
+    </table_data>
+    <table_data name="lake_groups">
+        <row>
+            <field name="id">1</field>
+            <field name="label">Lakes of Peru</field>
+        </row>
+        <row>
+            <field name="id">2</field>
+            <field name="label">Lakes of Bolivia</field>
+        </row>
+    </table_data>
+    <table_data name="countries">
+        <row>
+            <field name="id">1</field>
+            <field name="label">Peru</field>
+        </row>
+        <row>
+            <field name="id">2</field>
+            <field name="label">Bolivia</field>
+        </row>
+    </table_data>
+    <table_data name="lake2lake_group">
+        <row>
+            <field name="lake_id">1</field>
+            <field name="lake_group_id">1</field>
+        </row>
+        <row>
+            <field name="lake_id">1</field>
+            <field name="lake_group_id">2</field>
+        </row>
+    </table_data>
+    <table_data name="lake_group2country">
+        <row>
+            <field name="lake_group_id">1</field>
+            <field name="country_id">1</field>
+        </row>
+        <row>
+            <field name="lake_group_id">2</field>
+            <field name="country_id">2</field>
+        </row>
+    </table_data>
+</database>
+</mysqldump>

@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="test_training">
+    <table_data name="subjects">
+        <row>
+            <field name="id">1</field>
+            <field name="id">Physics of the Solid State</field>
+        </row>
+        <row>
+            <field name="id">2</field>
+            <field name="id">Quantum physics</field>
+        </row>
+        <row>
+            <field name="id">3</field>
+            <field name="id">Math subject 1</field>
+        </row>
+    </table_data>
+    <table_data name="courses">
+        <row>
+            <field name="id">1</field>
+            <field name="label">course Common1</field>
+            <field name="subject_id">null</field>
+        </row>
+        <row>
+            <field name="id">2</field>
+            <field name="label">course Common2</field>
+            <field name="subject_id">null</field>
+        </row>
+        <row>
+            <field name="id">3</field>
+            <field name="label">course Physics of the Solid State 1</field>
+            <field name="subject_id">1</field>
+        </row>
+        <row>
+            <field name="id">4</field>
+            <field name="label">course Physics of the Solid State 2</field>
+            <field name="subject_id">1</field>
+        </row>
+        <row>
+            <field name="id">5</field>
+            <field name="label">course Quantum physics 1</field>
+            <field name="subject_id">2</field>
+        </row>
+        <row>
+            <field name="id">6</field>
+            <field name="label">course Quantum physics 2</field>
+            <field name="subject_id">2</field>
+        </row>
+        <row>
+            <field name="id">7</field>
+            <field name="label">course Mathematics 1</field>
+            <field name="subject_id">3</field>
+        </row>
+        <row>
+            <field name="id">8</field>
+            <field name="label">course Mathematics 2</field>
+            <field name="subject_id">3</field>
+        </row>
+        <row>
+            <field name="id">9</field>
+            <field name="label">Soccer</field>
+            <field name="subject_id">null</field>
+        </row>
+        <row>
+            <field name="id">10</field>
+            <field name="label">Football</field>
+            <field name="subject_id">null</field>
+        </row>
+        <row>
+            <field name="id">11</field>
+            <field name="label">Baseball</field>
+            <field name="subject_id">null</field>
+        </row>
+        <row>
+            <field name="id">12</field>
+            <field name="label">Cycling</field>
+            <field name="subject_id">null</field>
+        </row>
+    </table_data>
+    <table_data name="course_sets">
+        <row>
+            <field name="id">1</field>
+            <field name="label">Common</field>
+        </row>
+        <row>
+            <field name="id">2</field>
+            <field name="label">Physics</field>
+        </row>
+        <row>
+            <field name="id">3</field>
+            <field name="label">Mathematics</field>
+        </row>
+        <row>
+            <field name="id">4</field>
+            <field name="label">Sport</field>
+        </row>
+    </table_data>
+    <table_data name="course_set_courses">
+        <row>
+            <field name="course_set_id">1</field>
+            <field name="course_id">1</field> <!-- Common 1 -->
+        </row>
+        <row>
+            <field name="course_set_id">1</field>
+            <field name="course_id">2</field> <!-- Common 2 -->
+        </row>
+        <row>
+            <field name="course_set_id">2</field>
+            <field name="course_id">3</field>
+        </row>
+        <row>
+            <field name="course_set_id">2</field>
+            <field name="course_id">4</field>
+        </row>
+        <row>
+            <field name="course_set_id">2</field>
+            <field name="course_id">5</field>
+        </row>
+        <row>
+            <field name="course_set_id">2</field>
+            <field name="course_id">6</field>
+        </row>
+        <row>
+            <field name="course_set_id">3</field>
+            <field name="course_id">7</field>
+        </row>
+        <row>
+            <field name="course_set_id">3</field>
+            <field name="course_id">8</field>
+        </row>
+        <row>
+            <field name="course_set_id">4</field>
+            <field name="course_id">9</field>
+        </row>
+        <row>
+            <field name="course_set_id">4</field>
+            <field name="course_id">10</field>
+        </row>
+        <row>
+            <field name="course_set_id">4</field>
+            <field name="course_id">11</field>
+        </row>
+        <row>
+            <field name="course_set_id">4</field>
+            <field name="course_id">12</field>
+        </row>
+    </table_data>
+    <table_data name="trainings">
+        <row>
+            <field name="id">1</field>
+            <field name="label">Training Physics 1</field>
+        </row>
+        <row>
+            <field name="id">2</field>
+            <field name="label">Training Physics 2</field>
+        </row>
+        <row>
+            <field name="id">3</field>
+            <field name="label">Training Mathematics 1</field>
+        </row>
+    </table_data>
+    <table_data name="training_course_sets">
+        <row>
+            <field name="training_id">1</field>
+            <field name="course_set_id">1</field>
+            <field name="min_selections">255</field>
+            <field name="max_selections">255</field>
+        </row>
+        <row>
+            <field name="training_id">1</field>
+            <field name="course_set_id">2</field>
+            <field name="min_selections">2</field>
+            <field name="max_selections">2</field>
+        </row>
+        <row>
+            <field name="training_id">1</field>
+            <field name="course_set_id">4</field>
+            <field name="min_selections">0</field>
+            <field name="max_selections">1</field>
+        </row>
+        <row>
+            <field name="training_id">2</field>
+            <field name="course_set_id">1</field>
+            <field name="min_selections">255</field>
+            <field name="max_selections">255</field>
+        </row>
+        <row>
+            <field name="training_id">2</field>
+            <field name="course_set_id">3</field>
+            <field name="min_selections">2</field>
+            <field name="max_selections">2</field>
+        </row>
+        <row>
+            <field name="training_id">2</field>
+            <field name="course_set_id">4</field>
+            <field name="min_selections">0</field>
+            <field name="max_selections">1</field>
+        </row>
+    </table_data>
+</database>
+</mysqldump>
